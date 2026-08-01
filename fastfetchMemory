@@ -1,0 +1,6 @@
+#!/bin/bash
+
+mkdir -p /etc/fastfetchMemory
+
+fastfetch --logo none -s physicalmemory > /etc/fastfetchMemory/memoria.txt
+sed -i 's/^[^:]*: //' /etc/fastfetchMemory/memoria.txt

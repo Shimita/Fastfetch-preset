@@ -1,0 +1,10 @@
+[Unit]
+Description=Generar información de memoria para Fastfetch
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/fastfetchMemory
+
+[Install]
+WantedBy=multi-user.target
